@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './styles/App.css';
 import CodeLingual from './components/CodeLingual';
 import Footer from './components/Footer';
 
@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <CodeLingual />
       </header>
-      
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,29 @@
+.main-footer {
+    color: #fff;
+    background-color: #0D111C;
+    padding-top: 3em;
+    width: 100%;
+    text-align: center;
+    /* position: fixed; */
+    bottom: 0;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.creator {
+    color: #fff;
+    margin: .5rem;
+}
+
+.creator:hover, .name:hover {
+    color: #7B7B7B;
+    text-decoration: none;
+}
+
+.name {
+    color: #fff;
+}
+
+hr {
+    width: 90%;
+}
