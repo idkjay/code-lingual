@@ -4,6 +4,12 @@ import PieChart from './PieChart';
 
 const CodeLingual = () => {
     const [username, setUsername] = useState("");
+    const [languages, setLanguages] = useState([]);
+    const [fetching, setFetching] = useState(false);
+    const [errormsg, setErrormsg] = useState("");
+    const [userfullname, setUserfullname] = useState("");
+    const [followers, setFollowers] = useState(0);
+    const [following, setFollowing] = useState(0);
 
     return (
         <div className="container">
