@@ -7,7 +7,6 @@ const MyPieChart = ({languages, userfullname}) => {
 
     return(
         <div>
-
             <Chart
                 width={'600px'}
                 height={'400px'}
@@ -18,7 +17,6 @@ const MyPieChart = ({languages, userfullname}) => {
                     title: title,
                 }}
             />
-
         </div>
     );
 }

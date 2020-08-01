@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/CodeLingual.css';
+import './CodeLingual.scss';
 import PieChart from './PieChart';
 
 const CodeLingual = () => {
