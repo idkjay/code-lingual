@@ -71,39 +71,35 @@ const CodeLingual = () => {
     }
 
     return (
-        <div className="container">
-            <h3>Search a GitHub user's most used programming languages.</h3>
-            <p>Based on a user's contributions to public GitHub repositories.</p>
-            <input 
-                type="text"
-                placeholder="Enter User's Github username"
-                value={username}
-                onChange={handleChange}
-            />
+      <div className="container">
+        <h3>Search a GitHub user's most used programming languages.</h3>
+        <p>Based on a user's contributions to public GitHub repositories.</p>
+        <input
+          type="text"
+          placeholder="Enter User's Github username"
+          value={username}
+          onChange={handleChange}
+        />
+        <div>{errormsg}</div>
+        <div>
+          {languages.length > 0 && !fetching && (
             <div>
-                {languages.length > 0 && !fetching
-                    &&
-                    <div>
-                        <div>
-                            {
-                                userfullname &&
-                                <span><br/>{userfullname}</span>
-                            }
-                            {
-                                followers &&
-                                <p>Followers: {followers}</p>
-                            }
-                            {
-                                following &&
-                                <p>Following {following}</p>
-                            }
-                        </div>
-                        <MyPieChart languages={languages} userfullname={userfullname} />
-                    </div>    
-                }
+              <div>
+                {userfullname && (
+                  <span>
+                    <br />
+                    {userfullname}
+                  </span>
+                )}
+                {followers && <p>Followers: {followers}</p>}
+                {following && <p>Following {following}</p>}
+              </div>
+              <MyPieChart languages={languages} userfullname={userfullname} />
             </div>
+          )}
         </div>
-    )
+      </div>
+    );
 }
 
 export default CodeLingual;
