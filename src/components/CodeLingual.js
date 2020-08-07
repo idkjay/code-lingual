@@ -77,7 +77,31 @@ const CodeLingual = () => {
             <input 
                 type="text"
                 placeholder="Enter User's Github username"
+                value={username}
+                onChange={handleChange}
             />
+            <div>
+                {languages.length > 0 && !fetching
+                    &&
+                    <div>
+                        <div>
+                            {
+                                userfullname &&
+                                <span><br/>{userfullname}</span>
+                            }
+                            {
+                                followers &&
+                                <p>Followers: {followers}</p>
+                            }
+                            {
+                                following &&
+                                <p>Following {following}</p>
+                            }
+                        </div>
+                        <MyPieChart languages={languages} userfullname={userfullname} />
+                    </div>    
+                }
+            </div>
         </div>
     )
 }
