@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './CodeLingual.scss';
 import PieChart from './PieChart';
+import Button from "@material-ui/core/Button";
 
 const CodeLingual = () => {
     const [username, setUsername] = useState("");
@@ -101,7 +102,7 @@ const CodeLingual = () => {
                 {followers && <p>Followers: {followers}</p>}
                 {following && <p>Following {following}</p>}
               </div>
-              <MyPieChart languages={languages} userfullname={userfullname} />
+              <PieChart languages={languages} userfullname={userfullname} />
             </div>
           )}
         </div>
