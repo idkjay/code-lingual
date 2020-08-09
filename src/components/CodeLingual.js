@@ -80,6 +80,13 @@ const CodeLingual = () => {
           value={username}
           onChange={handleChange}
         />
+        <Button
+            variant="contained"
+            color="primary"
+            onClick={fetchUser}
+        >
+            Fetch
+        </Button>
         <div>{errormsg}</div>
         <div>
           {languages.length > 0 && !fetching && (
