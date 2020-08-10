@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './CodeLingual.scss';
 import PieChart from './PieChart';
-import Button from "@material-ui/core/Button";
+
 
 const CodeLingual = () => {
     const [username, setUsername] = useState("");
@@ -81,13 +81,13 @@ const CodeLingual = () => {
           value={username}
           onChange={handleChange}
         />
-        <Button
+        <button
             variant="contained"
             color="primary"
             onClick={fetchUser}
         >
             Fetch
-        </Button>
+        </button>
         <div>{errormsg}</div>
         <div>
           {languages.length > 0 && !fetching && (
