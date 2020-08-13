@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './CodeLingual.scss';
 import PieChart from './PieChart';
 
-
 const CodeLingual = () => {
     const [username, setUsername] = useState("");
     const [languages, setLanguages] = useState([]);
@@ -37,7 +36,6 @@ const CodeLingual = () => {
         } else {
             setErrormsg("Not a valid user");
         }
-
         fetchUserdetails();
         setFetching(false);
     }
@@ -86,7 +84,7 @@ const CodeLingual = () => {
             color="primary"
             onClick={fetchUser}
         >
-            Fetch
+            Search User
         </button>
         <div>{errormsg}</div>
         <div>
