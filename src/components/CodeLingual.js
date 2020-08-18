@@ -11,6 +11,9 @@ const CodeLingual = () => {
     const [followers, setFollowers] = useState(0);
     const [following, setFollowing] = useState(0);
 
+    const REACT_APP_GITHUB_CLIENT_ID = "975e83 bdaa1f4843e6fd"
+    const REACT_APP_GITHUB_CLIENT_SECRET = "114a8b5001c33f12a54844d58c8173186f40c21c"
+    
     const myHeaders = new Headers();
     const authHeader = "Basic " + btoa(process.env.REACT_APP_GITHUB_CLIENT_ID + ":" + process.env.REACT_APP_GITHUB_CLIENT_SECRET);
     myHeaders.append("Authorization", authHeader);
